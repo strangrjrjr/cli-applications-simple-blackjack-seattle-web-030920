@@ -1,4 +1,4 @@
-include 'pry'
+
 def welcome
   # code #welcome here
   puts "Welcome to the Blackjack Table"
@@ -40,7 +40,7 @@ def hit?(total)
   # code hit? here
   prompt_user
   choice = get_user_input
-  binding.pry
+  puts choice
   if choice != 'h' || choice != 's'
     invalid_command
     choice = get_user_input
